@@ -1,0 +1,97 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.container .title {
+  font-size: 3.5rem;
+  color: #18122B;
+  margin-bottom: 3rem;
+  text-transform: capitalize;
+}
+
+.container .product {
+  text-align: center;
+  padding: 3rem 2rem;
+  cursor: pointer;
+}
+
+.container .product .imgContainer {
+  position: relative;
+}
+
+.container .product .imgContainer::after {
+  content: "";
+  display: block;
+}
+
+.container .product img {
+  object-fit: cover;
+  width: 30rem;
+  height: 30rem;
+}
+
+.container .product:hover img {
+  transform: scale(.9);
+}
+
+.container .product .nameContainer {
+  height: 150px;
+}
+
+.container .product h3 {
+  padding: 2rem 0;
+  font-size: 2rem;
+  color: #eee;
+}
+
+.container .product:hover h3 {
+  transform: scale(1.2);
+}
+
+.container .product .label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px
+}
+
+.container .product .price {
+  background: #443C68;
+  color: white;
+  font-size: 2.25rem;
+  min-height: 45px;
+  min-width: 45px;
+  border-radius: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 8;
+}
+
+.container .product .price:hover {
+  background-color:springgreen;
+  color: #18122B;
+  font-weight: bold;
+}
+
+.container .product .detail {
+  background: #443C68;
+  color: white;
+  font-size: 2.25rem;
+  min-height: 45px;
+  min-width: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.container .product .detail:hover {
+  transform: scale(1.2);
+  background: coral;
+}
+
+

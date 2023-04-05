@@ -14,7 +14,7 @@ interface Props {
 const Meta = ({title, keywords, description, ogTitle, ogType, ogUrl, ogImage, ogDescription}: Props) => {
     return (
        <Head>
-           <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+           <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
            <meta name="keywords" content={keywords}></meta>
            <meta name="description" content={description}></meta>
            <meta property="og:title" content={ogTitle} />
