@@ -1,0 +1,53 @@
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  font-weight: bold;
+}
+
+.pageLink {
+  cursor: pointer;
+ }
+
+ .pageItem {
+  min-height: 45px;
+  min-width: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  transition: background-color .2s;
+  background-color: #1b1f3a;
+  margin: 0 4px;
+ }
+
+ .pageItemActive {
+  min-height: 45px;
+  min-width: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  transition: background-color .2s;
+  background-color: coral;
+  border-radius: 50%;
+  margin: 0 4px;
+ }
+
+ @media screen and (max-width: 768px) {
+  .pagination {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    justify-content: center;
+    gap: 2rem;
+  }
+}
