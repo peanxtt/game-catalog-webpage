@@ -1,26 +1,45 @@
+# Technical Assessment
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Basic Information about this project
 
-First, run the development server:
+### Title of Project : Game Catalog Webpage
+
+### Author of Project
+
+[Tan Hua Sheng](https://github.com/peanxtt)
+
+### Description of Project
+
+This is a Responsive and Visually appealing **game catalogs website** build using Next.js. The purpose of this project is to showcases a catalog of games fetched from one API. The content inside this application are designed as game cards to provide a refreshing image for game website.
+
+This application are design and implement without using any external UI kits or Tailwind CSS tools.
+
+I hope you enjoy this project completed by myself!
+
+## Step-by-step Guidance to launch this application
+
+**Please install pnpm beforehand** !
+
+1. Open terminal and check if you are in the same directory with
+package.json & pnpm-lock.yaml file :
+
+1. Run the command below :
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
+```
+
+1. After the package installation steps are completed, run the command below to launch the application :
+
+```bash
 pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Enjoy :)
 
 ## Learn More
 
