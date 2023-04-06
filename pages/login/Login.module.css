@@ -1,0 +1,148 @@
+.container {
+  min-height: 100vh;
+  min-width: 0 auto;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  background-color: #443C68;
+  border-radius: 44px;
+}
+
+.center h1 {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 20px 0 20px 0;
+}
+
+.form {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.form .formGroup {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.form .formGroup input {
+  outline: none;
+  float: right;
+  padding: 6px;
+  height: 50px;
+  border: none;
+  margin-top: 8px;
+  font-size: 16px;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  text-transform: none;
+}
+
+.form .formGroup input::placeholder {
+  color: darkgrey;
+  font-weight: bold;
+}
+
+.form .formGroup input:hover {
+  transform: scale(1.1);
+  outline: none;
+}
+
+.form .formGroup input:focus {
+  transform: scale(1.1);
+  border: 3px solid;
+  border-color:mediumpurple;
+}
+
+.form .formButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  gap: 1.5rem;
+}
+
+.form button {
+  width: 85%;
+  height: 50px;
+  background-color: mediumslateblue;
+  border: none;
+  border-radius: 44px;
+  color: white;
+  padding: 15px 32px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  text-transform:uppercase
+}
+
+.form button:hover {
+  filter:brightness(.85);
+}
+
+.feedback {
+  display:none;
+}
+
+.feedbackActive {
+  padding-bottom: 5rem;
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+.hoverEffect {
+  margin: 30px 0;
+  position: relative;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.hoverEffect::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: whitesmoke;
+  transform-origin: bottom left;
+  transition: all 0.3s ease-out;
+}
+
+.hoverEffect:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.notFound {
+  font-size: 30px;
+  color: whitesmoke
+}
