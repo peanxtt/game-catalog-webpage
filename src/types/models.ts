@@ -39,3 +39,13 @@ export const GameSchema = z.object({
 });
 export type GameType = z.infer<typeof GameSchema>;
 
+export const accountSchema = z.object({
+  username: z.string({
+    required_error: 'Username is required.'
+  }),
+  password: z.string({
+    required_error: 'Password is required.'
+  })
+});
+export type account = z.infer<typeof accountSchema>;
+

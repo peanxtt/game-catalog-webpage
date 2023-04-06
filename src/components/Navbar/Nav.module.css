@@ -1,0 +1,144 @@
+.nav {
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2e2649;
+}
+
+.toggleBar {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  cursor: pointer;
+}
+
+.toggleBar div {
+  width: 40px;
+  height: 4px;
+  background-color: whitesmoke;
+  border-radius: 2px;
+}
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 80px;
+  width: 260px;
+  row-gap: 24px;
+  right: -260px;
+  padding: 24px;
+  transition: all 0.2s;
+  min-height: calc(100vh - 60px);
+  background-color: #2e2649;
+}
+
+.navListActive {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 80px;
+  width: 260px;
+  row-gap: 24px;
+  right: -260px;
+  padding: 24px;
+  transition: all 0.2s;
+  min-height: calc(100vh - 60px);
+  background-color: #2e2649;
+  right: 0;
+}
+
+.navLink {
+  font-size: 18px;
+  position: relative;
+  transition: all .3s linear;
+  cursor: pointer;
+}
+
+.navLink:hover {
+  transform: scale(1.1);
+}
+
+.navLinkActive {
+  font-size: 18px;
+  position: relative;
+  transition: all .3s linear;
+  cursor: pointer;
+}
+
+.navLinkActive:hover {
+  transform: scale(1.1);
+}
+
+.navLink h3 {
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+.navLinkActive h3 {
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+.searchBar input[type=text] {
+  background-color: #423b5b;
+  outline: none;
+  float: right;
+  border: none;
+  font-size: 17px;
+  border-radius: 44px;
+  transition: all 0.3s linear;
+  padding: 12px;
+  margin: 8px 0;
+  text-indent: 10px;
+}
+
+.searchBar input[type=text]::placeholder {
+  color: darkgrey;
+  font-weight: bold;
+}
+
+.searchBar input[type="text"]:focus {
+  background-color: whitesmoke;
+  outline: none;
+}
+
+.center{
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 868px) {
+  .toggleBar {
+    display: none;
+  }
+
+  .navList {
+    position: unset;
+    display: flex;
+    flex-direction: row;
+    min-height: fit-content;
+    width: fit-content;
+    column-gap: 5rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navLink::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 6px;
+    bottom: -16px;
+    left: 0;
+    background-color: #fefefe;
+    transition: all 0.3s linear;
+  }
+
+  .navLink:hover::before {
+    width: 100%;
+  }
+}

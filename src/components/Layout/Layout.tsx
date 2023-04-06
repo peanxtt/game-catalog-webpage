@@ -1,10 +1,8 @@
-import { ReactNode } from 'react'
-import Link from 'next/link';
+import { ReactNode, useState, useEffect } from 'react'
 
 import Meta from '../Meta';
-import Logo from '../Icons/Logo';
-
 import styles from './Layout.module.css'
+import Navbar from '../Navbar';
 
 interface Props {
   title: string
@@ -12,8 +10,19 @@ interface Props {
 }
 
 const Layout = ({ title, children }: Props) => {
+  const [displayChildren, setDisplayChildren] = useState(children);
+  const [transitionStage, setTransitionStage] = useState("fadeOut");
+
+  useEffect(() => {
+    setTransitionStage("fadeIn");
+  }, []);
+
+  useEffect(() => {
+    if (children !== displayChildren) setTransitionStage("fadeOut");
+  }, [children, setDisplayChildren, displayChildren]);
+
   return (
-    <div className={styles.container}>
+    <div>
       <Meta
       title={title}
       keywords={'Best, Games, Catalogs, Website'}
@@ -22,14 +31,19 @@ const Layout = ({ title, children }: Props) => {
       ogType={'website'}
       ogDescription={'Get to know some of the best games available in the market'}
       />
-      <header>
-        <Link href="/">
-          <Logo />
-        </Link>
-      </header>
-      <main className={styles.main}>
-        {children}
-      </main>
+      <div
+        className={`${styles.content} ${styles[transitionStage]}`}
+        onTransitionEnd={() => {
+          if (transitionStage === "fadeOut") {
+            setDisplayChildren(children);
+            setTransitionStage("fadeIn");
+          }
+        }}
+      >
+        <main className={styles.main}>
+          {displayChildren}
+        </main>
+      </div>
     </div>
   )
 }
