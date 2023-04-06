@@ -146,3 +146,9 @@
   font-size: 30px;
   color: whitesmoke
 }
+
+@media screen and (max-width: 868px) {
+  .center {
+    background-color: #393053;
+  }
+}

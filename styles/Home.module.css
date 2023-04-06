@@ -61,3 +61,15 @@
 .fadeIn {
   opacity: 1;
 }
+
+@media screen and (max-width: 868px) {
+  .notFound {
+    font-size: 25px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
