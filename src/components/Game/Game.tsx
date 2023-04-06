@@ -14,7 +14,7 @@ const Game = ({ id, name, image, genre, price, description }: Props) => {
   return (
     <div className={styles.container}>
        <div>
-          <Link href='/game/[id]' as={`game/${id}`}>
+          <Link href={'/game/[id]'} as={`game/${id}`}>
             <div>
               <div className={styles.product}>
                 <div className={styles.imgContainer}>

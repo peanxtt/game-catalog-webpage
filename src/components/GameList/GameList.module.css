@@ -5,11 +5,11 @@
   gap: 2rem;
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    width: 100%;
+@media screen and (max-width: 868px) {
+  .itemcontainer {
+    grid-template-columns: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
   }
