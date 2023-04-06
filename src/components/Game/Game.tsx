@@ -1,16 +1,23 @@
-import styles from './Games.module.css'
 import Link from 'next/link';
 
+import type { GameType } from '@/src/types/models';
+
+import styles from './Games.module.css'
+
 interface Props {
-  id: string,
-  name: string,
-  image: string,
-  genre: string,
+  id: string
+  name: string
+  image: string
+  genre: string
   price: string
+  canBeBought: boolean
   description: string | null
+  drmName: string
+  unitType: string
+  type: string
 }
 
-const Game = ({ id, name, image, genre, price, description }: Props) => {
+const Game = ({ id, name, image, price, canBeBought, description, drmName, unitType, type }: Props) => {
   return (
     <div className={styles.container}>
        <div>
@@ -22,10 +29,18 @@ const Game = ({ id, name, image, genre, price, description }: Props) => {
                 </div>
                 <div className={styles.nameContainer}>
                   <h3>{name}</h3>
-                  <p className={styles.description}>{description}</p>
+                </div>
+                <div className={styles.descriptionContainer}>
+                  <p>Available now on {drmName} !</p>
+                  <p>
+                    { description ?
+                      description :
+                      `${name} is a ${unitType}, sell in ${type}. The price of this game is RM${price}, it is sold on ${drmName}. Avai }`
+                    }
+                  </p>
                 </div>
                 <div className={styles.label}>
-                  <div className={styles.price}>RM {price}</div>
+                  <div className={canBeBought ? styles.priceActive : styles.priceInactive}>RM {price}</div>
                   <div className={styles.detail}>&rarr;</div>
                 </div>
               </div>

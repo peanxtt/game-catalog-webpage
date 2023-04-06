@@ -12,12 +12,12 @@
 }
 
 .container .product {
-  text-align: center;
-  padding: 3rem 2rem;
   cursor: pointer;
 }
 
 .container .product .imgContainer {
+  display: flex;
+  justify-content: center;
   position: relative;
 }
 
@@ -38,18 +38,38 @@
 }
 
 .container .product .nameContainer {
-  height: 150px;
+  height: 100px;
+  font-weight: 600;
 }
 
 .container .product h3 {
   transition: all .3s linear;
-  padding: 2rem 0;
+  padding: 2rem;
   font-size: 2rem;
+  text-align: center;
+  font-weight: 900;
   color: #eee;
 }
 
 .container .product:hover h3 {
   transform: scale(1.2);
+}
+
+.container .product .descriptionContainer {
+  height: 100px;
+  font-weight: 600;
+}
+
+
+.container .product p {
+  font-size: 1.5rem;
+  color: whitesmoke;
+  text-align: left;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
 }
 
 .container .product .label {
@@ -59,7 +79,7 @@
   gap: 15px
 }
 
-.container .product .price {
+.container .product .priceActive {
   transition: all .3s linear;
   background: #443C68;
   color: white;
@@ -73,7 +93,21 @@
   flex-grow: 8;
 }
 
-.container .product .price:hover {
+.container .product .priceInactive {
+  transition: all .3s linear;
+  background: grey;
+  color: black;
+  font-size: 2.25rem;
+  min-height: 45px;
+  min-width: 45px;
+  border-radius: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 8;
+}
+
+.container .product .priceActive:hover {
   background-color:springgreen;
   color: #18122B;
   font-weight: bold;

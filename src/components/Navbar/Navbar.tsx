@@ -9,11 +9,11 @@ import styles from './Nav.module.css'
 const navItems = [
   {
     text: 'About',
-    href: 'about'
+    href: '/about'
   },
   {
     text: 'Login / Register',
-    href: 'login'
+    href: '/login'
   }
 ];
 

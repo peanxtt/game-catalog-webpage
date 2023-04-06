@@ -14,7 +14,7 @@ const NotFoundPage = () => {
           <div>
             <h1>Oh no</h1>
             <h2>The page cannot be found...</h2>
-            <div className={styles.hoverEffect}><Link href={'/'}><p>Go back to Main Page</p></Link></div>
+            <div className={styles.hoverEffect}><Link href={'/'}><p>Go back to Game Catalog</p></Link></div>
           </div>
         </div>
       </Layout>

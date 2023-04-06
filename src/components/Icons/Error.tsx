@@ -7,7 +7,7 @@ const Error = () => {
     <div>
       <Image
         src="/assets/404-icon.png"
-        alt="Website Logo"
+        alt="404 Not Found - Error Icon"
         width={588}
         height={537}
         className={styles.themeLogo}
