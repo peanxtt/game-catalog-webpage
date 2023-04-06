@@ -2,19 +2,18 @@ import { memo } from 'react'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 
-const Logo = () => {
+const Error = () => {
   return (
     <div>
       <Image
-        src="/assets/team17.png"
+        src="/assets/404-icon.png"
         alt="Website Logo"
-        width={200}
-        height={53}
+        width={588}
+        height={537}
         className={styles.themeLogo}
-        priority
       />
     </div>
   )
 }
 
-export default memo(Logo)
+export default memo(Error)
