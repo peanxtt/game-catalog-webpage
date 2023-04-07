@@ -9,7 +9,7 @@ import styles from './Nav.module.css'
 const navItems = [
   {
     text: 'About',
-    href: '/about'
+    href: '/'
   },
   {
     text: 'Login / Register',
@@ -32,9 +32,11 @@ const Navbar = ({ ...props }) => {
   return (
     <header>
       <nav className={styles.nav}>
-        <Link href={'/'} onClick={handleReset}>
-          <Logo />
-        </Link>
+        <div className={styles.logo}>
+          <Link href={'/'} onClick={handleReset}>
+            <Logo />
+          </Link>
+        </div>
 
         <div className={styles.toggleBar} onClick={handleToggleBar}>
           <div></div>

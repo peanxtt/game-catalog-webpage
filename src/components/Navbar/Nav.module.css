@@ -3,7 +3,11 @@
   padding: 15px;
   justify-content: space-between;
   align-items: center;
-  background-color: #2e2649;
+  background-color: #8D7B68;
+}
+
+.logo {
+  padding-left: 30px;
 }
 
 .toggleBar {
@@ -31,7 +35,7 @@
   padding: 24px;
   transition: all 0.2s;
   min-height: calc(100vh - 60px);
-  background-color: #2e2649;
+  background-color: #8D7B68;
 }
 
 .navListActive {
@@ -45,7 +49,7 @@
   padding: 24px;
   transition: all 0.2s;
   min-height: calc(100vh - 60px);
-  background-color: #2e2649;
+  background-color: #8D7B68;
   right: 0;
 }
 
@@ -82,7 +86,7 @@
 }
 
 .searchBar input[type=text] {
-  background-color: #423b5b;
+  background-color: #A4907C;
   outline: none;
   float: right;
   border: none;
@@ -96,13 +100,24 @@
 }
 
 .searchBar input[type=text]::placeholder {
-  color: darkgrey;
+  color: #F1DEC9;
   font-weight: bold;
+  transition: all 0.5s linear;
+}
+
+.searchBar input[type="text"]:hover {
+  transform: scale(1.05);
 }
 
 .searchBar input[type="text"]:focus {
-  background-color: whitesmoke;
+  transform: scale(1.05);
+  background-color: #F1DEC9;
+  filter: brightness(0.85);
   outline: none;
+}
+
+.searchBar input[type=text]:focus::placeholder {
+  color: lightgray;
 }
 
 .center{

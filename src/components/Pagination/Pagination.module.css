@@ -22,8 +22,8 @@
   align-items: center;
   font-size: 2rem;
   color: white;
-  transition: background-color .2s;
-  background-color: #1b1f3a;
+  transition: all 0.4s linear;
+  background-color: #8D7B68;
   margin: 0 4px;
  }
 
@@ -37,10 +37,20 @@
   font-size: 2rem;
   color: white;
   text-decoration: none;
-  transition: background-color .2s;
-  background-color: coral;
+  transition: all 0.4s linear;
+  background-color: #C36A2D;
   border-radius: 50%;
   margin: 0 4px;
+ }
+
+ .pageItem:hover {
+  transform: scale(1.1);
+  filter: brightness(1.05)
+ }
+
+ .pageItemActive:hover {
+  transform: scale(1.2);
+  background-color: #DE834D;
  }
 
  @media screen and (max-width: 767px) {

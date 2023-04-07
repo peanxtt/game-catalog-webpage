@@ -16,8 +16,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 500px;
-  background-color: #443C68;
-  border-radius: 44px;
+  background-color: #86745F;
+  border-radius: 25px;
+  box-shadow: 0 0 5px 5px #86745F;
 }
 
 .center h1 {
@@ -71,8 +72,8 @@
 
 .form .formGroup input:focus {
   transform: scale(1.1);
-  border: 3px solid;
-  border-color:mediumpurple;
+  border: 4px solid;
+  border-color:#F1DEC9;
 }
 
 .form .formButton {
@@ -87,7 +88,7 @@
 .form button {
   width: 85%;
   height: 50px;
-  background-color: mediumslateblue;
+  background-color: #A4907C;
   border: none;
   border-radius: 44px;
   color: white;
@@ -104,7 +105,7 @@
 }
 
 .form button:hover {
-  filter:brightness(.85);
+  filter:brightness(.9);
 }
 
 .feedback {
@@ -115,7 +116,7 @@
   padding-bottom: 5rem;
   font-size: 20px;
   font-weight: bold;
-  color: red;
+  color: lightcoral;
 }
 
 .hoverEffect {

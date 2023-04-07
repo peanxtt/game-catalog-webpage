@@ -1,14 +1,9 @@
 .container {
+  background: #8E7E6C;
   max-width: 1200px;
   margin: 0 auto;
   padding: 3rem 2rem;
-}
-
-.container .title {
-  font-size: 3.5rem;
-  color: #18122B;
-  margin-bottom: 3rem;
-  text-transform: capitalize;
+  box-shadow: 0 0 4px 4px #8E7E6C;
 }
 
 .container .product .imgContainer {
@@ -16,6 +11,7 @@
   justify-content: center;
   position: relative;
   cursor: default;
+  padding-bottom: 1.5rem;
 }
 
 .container .product .imgContainer::after {
@@ -31,7 +27,7 @@
 }
 
 .container .product:hover img {
-  transform: scale(.9);
+  transform: scale(1.1);
 }
 
 .container .product .nameContainer {
@@ -45,7 +41,8 @@
   font-size: 2.25rem;
   text-align: center;
   font-weight: 900;
-  color: #eee;
+  color: #FAF9F6;
+  cursor: default;
 }
 
 .container .product:hover h3 {
@@ -53,14 +50,16 @@
 }
 
 .container .product .descriptionContainer {
-  height: 100px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: auto;
   font-weight: 600;
 }
 
 
 .container .product p {
   font-size: 1.5rem;
-  color: whitesmoke;
+  color: #FAF9F6;
   text-align: left;
   text-transform: none;
   overflow: hidden;
@@ -68,7 +67,7 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
-  cursor: help;
+  cursor: default;
 }
 
 .container .product .label {
@@ -79,10 +78,11 @@
 }
 
 .container .product .priceActive {
-  transition: all .3s linear;
-  background: #443C68;
-  color: white;
+  transition: all .5s linear;
+  background: #675D50;
+  color: #FAF9F6;
   font-size: 2.25rem;
+  font-weight: bolder;
   min-height: 45px;
   min-width: 45px;
   border-radius: 44px;
@@ -94,7 +94,7 @@
 
 .container .product .priceInactive {
   transition: all .3s linear;
-  background: grey;
+  background: gray;
   color: black;
   font-size: 2.25rem;
   min-height: 45px;
@@ -107,15 +107,13 @@
 }
 
 .container .product .priceActive:hover {
-  background-color:springgreen;
-  color: #18122B;
-  font-weight: bold;
+  background-color:#9BA17B;
 }
 
 .container .product .detail {
   transition: all .3s linear;
-  background: #443C68;
-  color: white;
+  background: #DE834D;
+  color: whitesmoke;
   font-size: 2.25rem;
   min-height: 45px;
   min-width: 45px;
@@ -128,7 +126,7 @@
 
 .container .product .detail:hover {
   transform: scale(1.2);
-  background-color: coral;
+  background-color: #FF9966;
 }
 
 @media screen and (max-width: 767px) {
@@ -149,8 +147,8 @@
   }
 
   .container .product .priceActive {
-    color: black;
-    background: springgreen;
+    color: whitesmoke;
+    background: #675D50;
     font-size: 2.5rem;
     min-height: 45px;
     min-width: 0;
@@ -173,8 +171,8 @@
   }
 
   .container .product .detail {
-    color: black;
-    background: coral;
+    color: whitesmoke;
+    background: #DE834D;
     font-size: 2.25rem;
     height: 45px;
     width: 45px;
