@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import styles from './Icons.module.css'
 
+//? Steam Logo
 const Steam = () => {
   return (
     <div className={styles.container}>

@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import styles from './Icons.module.css'
 
+//? Error 404 Image
 const Error = () => {
   return (
     <div>

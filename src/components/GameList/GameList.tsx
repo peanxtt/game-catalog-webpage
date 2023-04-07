@@ -4,8 +4,8 @@ import Pagination from "../Pagination";
 import Game from "../Game/Game";
 import { paginate } from "@/src/helper";
 
-import { conversionRateSchema } from "@/src/types/models";
 import type { GameType } from "@/src/types/models";
+import { conversionRateSchema } from "@/src/types/models";
 
 import styles from './GameList.module.css'
 
@@ -13,6 +13,7 @@ interface Props {
   filteredGames: GameType[]
 }
 
+//? Take in a list of games from API and present it with grid styled view
 const GameList = ({ filteredGames }: Props ) => {
   const conversionRate = conversionRateSchema.parse(process.env.CONVERSION_RATE);
   const [currentPage, setCurrentPage] = useState(1);
@@ -47,7 +48,6 @@ const GameList = ({ filteredGames }: Props ) => {
                 description={game.description}
                 drmName={game.unit_items[0].drm_name}
                 unitType={game.unit_type}
-                type={game.type}
               />
             </div>
           )

@@ -7,8 +7,9 @@ interface Props {
   onPageChange: any
 }
 
+//? Response pagination selector to enable viewer to view different pages of content based on their needs
 const Pagination = ({ items, currentPage, pageSize, onPageChange}: Props) => {
-  const pagesCount = Math.ceil(items / pageSize); // 100/10
+  const pagesCount = Math.ceil(items / pageSize);
   const pages = Array.from({ length: pagesCount }, (_, i) => i + 1);
 
   if (pagesCount === 1) return null;

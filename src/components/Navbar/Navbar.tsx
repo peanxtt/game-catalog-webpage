@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { useState, ChangeEvent } from 'react';
+import { useState } from 'react';
 
 import Logo from '../Icons/Logo';
 import NavItem from './NavItem';
@@ -17,6 +17,7 @@ const navItems = [
   }
 ];
 
+//? Responsive navigation bar for websites navigation purposes, currently implemented 2 Mock elements (About & Login)
 const Navbar = ({ ...props }) => {
   const [navActive, setNavActive] = useState(false);
   const [currActive, setCurrActive] = useState(-1);

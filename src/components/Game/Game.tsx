@@ -12,16 +12,16 @@ interface Props {
   description: string | null
   drmName: string
   unitType: string
-  type: string
 }
 
-const Game = ({ id, name, image, price, canBeBought, description, drmName, unitType, type }: Props) => {
+//? Individual game container for grid view
+const Game = ({ id, name, image, price, canBeBought, description, drmName, unitType }: Props) => {
   return (
     <div className={styles.container}>
       <Link href={'/game/[id]'} as={`game/${id.toLowerCase()}`}>
         <div className={styles.product}>
           <div className={styles.imgContainer}>
-            <img src={image} alt={name} />
+            <img src={image} alt={`${name} Image`} />
           </div>
           <div className={styles.nameContainer}>
             <h3>{name}</h3>

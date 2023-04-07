@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import styles from './Icons.module.css'
 
+//? Website Main Logo
 const Logo = () => {
   return (
     <div>

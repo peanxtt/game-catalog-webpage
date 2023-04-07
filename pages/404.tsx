@@ -5,6 +5,7 @@ import Layout from '@/src/components/Layout';
 
 import styles from '@/styles/Home.module.css'
 
+//? Mock 404 Page
 const NotFoundPage = () => {
   return (
     <div className={styles.container}>

@@ -11,6 +11,7 @@ interface Props {
   ogDescription?: string
 }
 
+//? html Head tag for implementing different meta tags
 const Meta = ({title, keywords, description, ogTitle, ogType, ogUrl, ogImage, ogDescription}: Props) => {
   return (
     <Head>
