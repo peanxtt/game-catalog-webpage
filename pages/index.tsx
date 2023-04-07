@@ -2,6 +2,7 @@ import { GetStaticProps } from 'next'
 
 import Layout from '@/src/components/Layout'
 import GameList from '@/src/components/GameList'
+import Footer from '@/src/components/Footer'
 
 import type { NextPage } from 'next'
 import  type{ GameType } from '@/src/types/models'
@@ -12,7 +13,7 @@ type Props = {
   games: GameType[]
 }
 
-//?: Reference color palatte for this project : https://colorhunt.co/palette/635985443c6839305318122b
+//?: Reference color palatte for this project : https://colorhunt.co/palette/8d7b68a4907cc8b6a6f1dec9
 
 const Home: NextPage<Props> = ({ games }: Props) => {
   return (
@@ -20,6 +21,7 @@ const Home: NextPage<Props> = ({ games }: Props) => {
       <Layout title={"Welcome to Team 17 Game Store | Select and Preview your Favourite Game !"}>
         <GameList filteredGames={games} />
       </Layout>
+      <Footer />
     </div>
  )
 }

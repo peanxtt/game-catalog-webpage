@@ -55,7 +55,7 @@ const Game: NextPage<Props> = ({ game }) => {
 
           <div className={styles.descriptionSection}>
             <div className={styles.sectionContent}>
-              <h1>About This Game</h1>
+              <h2>About This Game</h2>
 
               <div className={styles.description}>
                 <p>
@@ -73,7 +73,7 @@ const Game: NextPage<Props> = ({ game }) => {
 
           <div className={styles.requirementSection}>
             <div className={styles.sectionContent}>
-              <h1>System Requirements</h1>
+              <h2>System Requirements</h2>
 
               <div className={styles.requirementContainer}>
                 <ul className={styles.requirementTable}>
@@ -99,7 +99,7 @@ const Game: NextPage<Props> = ({ game }) => {
                   </li>
                   <li className={styles.tableRow}>
                     <div className={styles.column1}>Memory</div>
-                    <div className={styles.column2}>8GB RAM</div>
+                    <div className={styles.column2}>4GB RAM</div>
                     <div className={styles.column3}>12GB RAM</div>
                   </li>
                   <li className={styles.tableRow}>
