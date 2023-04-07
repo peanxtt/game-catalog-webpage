@@ -2,7 +2,6 @@ import { ReactNode, useState, useEffect } from 'react'
 
 import Meta from '../Meta';
 import styles from './Layout.module.css'
-import Navbar from '../Navbar';
 
 interface Props {
   title: string
@@ -25,7 +24,7 @@ const Layout = ({ title, children }: Props) => {
     <div>
       <Meta
       title={title}
-      keywords={'Best, Games, Catalogs, Website'}
+      keywords={'Best, Latest, Popular, Games, Catalogs, Website, Webpage'}
       description={'Hottest and Best Selling Games all around the world!'}
       ogTitle={'Best Selling Games | Every Latest Game You Need To Know!'}
       ogType={'website'}

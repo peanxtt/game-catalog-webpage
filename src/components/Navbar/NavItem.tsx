@@ -9,7 +9,6 @@ interface Props {
 }
 
 const NavItem = ({ href, text, active }: Props) => {
-
   return (
     <Link href={href}>
       <div className={active ? styles.navLinkActive : styles.navLink}>
