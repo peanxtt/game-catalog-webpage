@@ -6,7 +6,7 @@ export const unitItemSchema = z.object({
   type: z.string(),
   price: z.object({
     amount: z.string(),
-    amount_with_discount: z.string(),
+    amount_without_discount: z.string(),
     currency: z.string()
   }),
   virtual_prices: z.array(z.string()),
@@ -48,4 +48,6 @@ export const accountSchema = z.object({
   })
 });
 export type account = z.infer<typeof accountSchema>;
+
+export const conversionRateSchema = z.number();
 
