@@ -12,11 +12,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ### Description of Project
 
-This is a Responsive and Visually appealing **game catalogs website** build using Next.js. The purpose of this project is to showcases a catalog of games fetched from one API. The content inside this application are designed as game cards to provide a refreshing image for game website.
+The name of this webpage is **Peanut Game Catalog**.
+
+This is a Responsive and Visually appealing **game catalogs webpage** build using Next.js. The purpose of this project is to showcases a catalog of games fetched from one API. The content inside this application are designed as game cards to provide a refreshing image for game website.
 
 This application are design and implement without using any external UI kits or Tailwind CSS tools.
-
-I hope you enjoy this project completed by myself!
 
 ## Step-by-step Guidance to launch this application
 
@@ -31,10 +31,11 @@ package.json & pnpm-lock.yaml file :
 pnpm install
 ```
 
-1. After the package installation steps are completed, run the command below to launch the application :
+1. After the package installation complete, run either of the command below to launch the application :
 
 ```bash
 pnpm dev
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
