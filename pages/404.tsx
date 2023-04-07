@@ -12,8 +12,9 @@ const NotFoundPage = () => {
         <div className={styles.notFound}>
           <Error />
           <div>
-            <h1>Oh no</h1>
-            <h2>The page cannot be found...</h2>
+            <h1>Oops...</h1>
+            <h2>Page Not Found</h2>
+            <h2>We Will Be Back</h2>
             <div className={styles.hoverEffect}><Link href={'/'}><p>Go back to Game Catalog</p></Link></div>
           </div>
         </div>
