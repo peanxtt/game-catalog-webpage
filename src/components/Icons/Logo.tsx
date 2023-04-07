@@ -7,10 +7,10 @@ const Logo = () => {
   return (
     <div>
       <Image
-        src="/assets/team17.png"
+        src="/assets/logo.png"
         alt="Website Logo"
-        width={200}
-        height={53}
+        width={100}
+        height={100}
         className={styles.themeLogo}
         priority
       />
