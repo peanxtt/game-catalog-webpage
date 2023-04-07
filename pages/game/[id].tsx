@@ -36,11 +36,11 @@ const Game: NextPage<Props> = ({ game }) => {
 
   if(!values || !game) return <Loading />
   return (
-    <Layout title={`${game.name} | Preview | Team 17 Games Store`}>
+    <Layout title={`${game.name} | Game Details | Peanut Game Catalog`}>
       <div className={styles.container}>
         <div className={styles.product}>
           <div className={styles.image}>
-            <img src={game.image_url} alt={`${game.name} - ${game.description}`} />
+            <img src={game.image_url} alt={`${game.name} Image`} />
           </div>
 
           <h1>{game.name}</h1>

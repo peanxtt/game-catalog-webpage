@@ -8,7 +8,7 @@ import styles from '@/styles/Home.module.css'
 const NotFoundPage = () => {
   return (
     <div className={styles.container}>
-      <Layout title={"Welcome to Team 17 Game Store | Select and Preview your Favourite Game !"}>
+      <Layout title={"404 | Error | Select and Preview your Favourite Game !"}>
         <div className={styles.notFound}>
           <Error />
           <div>

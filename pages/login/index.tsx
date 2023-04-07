@@ -42,7 +42,7 @@ const Login: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <Layout title={"Login or Register | Team 17 Game Store | Select and Preview your Favourite Game !"}>
+      <Layout title={"Login or Register | Peanut Game Catalog | Select and Preview your Favourite Game !"}>
         <div className={styles.center}>
           <h1>Login</h1>
           <div className={styles.form}>

@@ -14,11 +14,10 @@ type Props = {
 }
 
 //?: Reference color palatte for this project : https://colorhunt.co/palette/8d7b68a4907cc8b6a6f1dec9
-
 const Home: NextPage<Props> = ({ games }: Props) => {
   return (
     <div className={styles.container}>
-      <Layout title={"Welcome to Team 17 Game Store | Select and Preview your Favourite Game !"}>
+      <Layout title={"Peanut Game Catalog | Select and Preview your Favourite Game Details!"}>
         <GameList filteredGames={games} />
       </Layout>
       <Footer />
