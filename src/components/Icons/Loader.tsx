@@ -1,4 +1,5 @@
 import { memo } from 'react'
+
 import styles from './Icons.module.css'
 
 const Loader = () => {
