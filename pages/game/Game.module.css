@@ -4,32 +4,198 @@
 .container {
   min-height: 80vh;
   margin: 0 auto;
-  padding: 3rem 2rem;
+  padding: 5% 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 20rem;
+  background-color: #27213a;
 }
 
 .container .product {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6.5rem;
+}
+
+.container .product img {
+  width: 75%;
+  height: auto;
 }
 
 .container .product h1 {
   font-family: 'Kanit', sans-serif;
   font-weight: bolder;
-  font-size: 50px;
+  font-size: 60px;
+  color: lightgray
+}
+
+.container .product h2 {
+  font-family: 'Kanit', sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: lightgray;
 }
 
 .container .product p {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 25px;
+  color: lightgray;
+  text-align: center;
+  line-height: 1.8;
 }
 
+.container .product .price {
+  transition: all .3s linear;
+  background: #443C68;
+  color: lightgray;
+  font-size: 3rem;
+  font-weight: 400;
+  padding: 3rem 10%;
+  border-radius: 25px;
+  cursor: pointer;
+}
 
+.container .product .price:hover {
+  filter: brightness(.95);
+  transform: scale(.95);
+}
 
-.container .product img {
-  width: 100%;
-  height: auto;
+.container .product .description {
+  display: flex;
+  padding: 0 15% 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.container .product .descriptionSection {
+  background-color: #393053;
+  padding: 10rem 0 10rem;
+}
+
+.container .product .descriptionSection .sectionContent {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15% 0;
+  gap: 5rem;
+}
+
+.container .product .requirementSection {
+  background-color: #2d2642;
+  padding: 10rem 0 10rem;
+}
+
+.container .product .requirementSection .sectionContent {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15% 0;
+  gap: 5rem;
+}
+
+.requirementContainer {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: whitesmoke;
+  text-align: left;
+  line-height: 1.8;
+}
+
+.requirementTable li {
+  padding: 2rem 3rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.requirementTable .tableRow {
+  border-radius: 2px;
+  background-color: #332b4a;
+  border-bottom: 1px solid grey;
+}
+
+.requirementTable .column1 {
+  filter: brightness(.85);
+  flex-basis: 30%;
+}
+
+.requirementTable .column2 {
+  flex-basis: 35%;
+}
+
+.requirementTable .column3 {
+  flex-basis: 35%;
+}
+
+.container .return {
+  transition: all .3s linear;
+  background: #1b1f3a;
+  color: whitesmoke;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 2rem 15%;
+  width: 5px;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .return:hover {
+  filter: brightness(1.2);
+  transform: scale(.95);
+}
+
+.container .product .platform {
+  display: flex;
+  margin: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .requirementContainer {
+    font-size: 10px;
+  }
+
+  .requirementTable li {
+    gap: 2.5rem;
+  }
+
+  .requirementTable .column1 {
+    display: none;
+  }
+
+  .requirementTable .column2 {
+    flex-basis: 50%;
+  }
+
+  .requirementTable .column3 {
+    flex-basis: 50%;
+  }
+
+  .container .product h1 {
+    font-size: 2rem;
+  }
+
+  .container .product h2 {
+    font-size: 2rem;
+  }
+
+  .container .product p {
+    font-size: 11px;
+  }
 }

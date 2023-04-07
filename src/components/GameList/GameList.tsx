@@ -2,8 +2,9 @@ import { useState } from "react";
 
 import Pagination from "../Pagination";
 import Game from "../Game/Game";
-import { paginate, selectRandomDescription } from "@/src/helper";
+import { paginate } from "@/src/helper";
 
+import { conversionRateSchema } from "@/src/types/models";
 import type { GameType } from "@/src/types/models";
 
 import styles from './GameList.module.css'
@@ -13,7 +14,7 @@ interface Props {
 }
 
 const GameList = ({ filteredGames }: Props ) => {
-  const convertionRate = 4.40;
+  const conversionRate = conversionRateSchema.parse(process.env.CONVERSION_RATE);
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 9;
   const isBrowser = () => typeof window !== 'undefined'; //The approach recommended by Next.js
@@ -38,7 +39,7 @@ const GameList = ({ filteredGames }: Props ) => {
                 image={game.image_url}
                 price={
                   game.unit_items[0].price.currency === 'USD' ?
-                  (parseInt(game.unit_items[0].price.amount)*convertionRate).toFixed(2) :
+                  (parseInt(game.unit_items[0].price.amount)*conversionRate).toFixed(2) :
                   (parseInt(game.unit_items[0].price.amount)).toFixed(2)
                 }
                 canBeBought={game.unit_items[0].can_be_bought}

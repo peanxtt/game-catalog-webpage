@@ -1,0 +1,188 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.container .title {
+  font-size: 3.5rem;
+  color: #18122B;
+  margin-bottom: 3rem;
+  text-transform: capitalize;
+}
+
+.container .product .imgContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  cursor: default;
+}
+
+.container .product .imgContainer::after {
+  content: "";
+  display: block;
+}
+
+.container .product img {
+  transition: all .3s linear;
+  object-fit: cover;
+  width: 30rem;
+  height: 30rem;
+}
+
+.container .product:hover img {
+  transform: scale(.9);
+}
+
+.container .product .nameContainer {
+  height: 125px;
+  font-weight: 600;
+}
+
+.container .product h3 {
+  transition: all .3s linear;
+  padding: 2rem;
+  font-size: 2.25rem;
+  text-align: center;
+  font-weight: 900;
+  color: #eee;
+}
+
+.container .product:hover h3 {
+  transform: scale(1.2);
+}
+
+.container .product .descriptionContainer {
+  height: 100px;
+  font-weight: 600;
+}
+
+
+.container .product p {
+  font-size: 1.5rem;
+  color: whitesmoke;
+  text-align: left;
+  text-transform: none;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  cursor: help;
+}
+
+.container .product .label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+}
+
+.container .product .priceActive {
+  transition: all .3s linear;
+  background: #443C68;
+  color: white;
+  font-size: 2.25rem;
+  min-height: 45px;
+  min-width: 45px;
+  border-radius: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 8;
+}
+
+.container .product .priceInactive {
+  transition: all .3s linear;
+  background: grey;
+  color: black;
+  font-size: 2.25rem;
+  min-height: 45px;
+  min-width: 45px;
+  border-radius: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 8;
+}
+
+.container .product .priceActive:hover {
+  background-color:springgreen;
+  color: #18122B;
+  font-weight: bold;
+}
+
+.container .product .detail {
+  transition: all .3s linear;
+  background: #443C68;
+  color: white;
+  font-size: 2.25rem;
+  min-height: 45px;
+  min-width: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.container .product .detail:hover {
+  transform: scale(1.2);
+  background-color: coral;
+}
+
+@media screen and (max-width: 767px) {
+  .container .product {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container .product .label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  .container .product .priceActive {
+    color: black;
+    background: springgreen;
+    font-size: 2.5rem;
+    min-height: 45px;
+    min-width: 0;
+    padding-inline: 50px;
+    border-radius: 44px;
+    flex-grow: 8;
+    flex-basis: auto;
+  }
+
+  .container .product .priceInactive {
+    color: black;
+    background: grey;
+    font-size: 2.5rem;
+    min-height: 45px;
+    min-width: 0;
+    padding-inline: 50px;
+    border-radius: 44px;
+    flex-grow: 8;
+    flex-basis: auto;
+  }
+
+  .container .product .detail {
+    color: black;
+    background: coral;
+    font-size: 2.25rem;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    flex-grow: 2;
+    flex-basis: auto;
+  }
+
+}
+
+
