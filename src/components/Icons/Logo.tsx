@@ -9,7 +9,7 @@ const Logo = () => {
     <div>
       <Image
         src="/assets/logo.png"
-        alt="Website Logo"
+        alt="Peanut Game Store - Website Logo"
         width={100}
         height={100}
         className={styles.themeLogo}

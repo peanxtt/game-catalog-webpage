@@ -9,7 +9,7 @@ const Steam = () => {
     <div className={styles.container}>
       <Image
         src="/assets/steamlogo.png"
-        alt="Steam Logo"
+        alt="Video Game Platform - Steam Icon"
         width={200}
         height={200}
       />

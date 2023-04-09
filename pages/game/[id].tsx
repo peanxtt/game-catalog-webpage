@@ -40,7 +40,7 @@ const Game: NextPage<Props> = ({ game }) => {
       <div className={styles.container}>
         <div className={styles.product}>
           <div className={styles.image}>
-            <img src={game.image_url} alt={`${game.name} Image`} />
+            <img src={game.image_url} alt={`This is the Capsule Art of ${game.name} game.`} />
           </div>
 
           <h1>{game.name}</h1>

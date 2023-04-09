@@ -21,7 +21,7 @@ const Game = ({ id, name, image, price, canBeBought, description, drmName, unitT
       <Link href={'/game/[id]'} as={`game/${id.toLowerCase()}`}>
         <div className={styles.product}>
           <div className={styles.imgContainer}>
-            <img src={image} alt={`${name} Image`} />
+            <img src={image} alt={`This is the Capsule Art of ${name} game`} />
           </div>
           <div className={styles.nameContainer}>
             <h3>{name}</h3>
