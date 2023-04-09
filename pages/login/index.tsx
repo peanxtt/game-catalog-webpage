@@ -42,7 +42,10 @@ const Login: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <Layout title={"Login or Register | Peanut Game Catalog | Select and Preview your Favourite Game !"}>
+      <Layout
+        title={'Login or Register | Peanut Game Catalog | Select and Preview your Favourite Game !'}
+        description={'Peanut Game Store - Login or Register Page. Become A Member Today, Select and Preview the latest upcoming game around the world!'}
+        >
         <div className={styles.center}>
           <h1>Login</h1>
           <div className={styles.form}>

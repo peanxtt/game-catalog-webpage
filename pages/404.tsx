@@ -9,7 +9,10 @@ import styles from '@/styles/Home.module.css'
 const NotFoundPage = () => {
   return (
     <div className={styles.container}>
-      <Layout title={"404 | Error | Select and Preview your Favourite Game !"}>
+      <Layout
+        title={'Page Not Found | 404 | Select and Preview your Favourite Game !'}
+        description={'Select and Preview the latest upcoming game around the world!'}
+        >
         <div className={styles.notFound}>
           <Error />
           <div>

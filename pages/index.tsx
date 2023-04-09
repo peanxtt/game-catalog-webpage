@@ -17,7 +17,10 @@ type Props = {
 const Home: NextPage<Props> = ({ games }: Props) => {
   return (
     <div className={styles.container}>
-      <Layout title={"Peanut Game Catalog | Select and Preview your Favourite Game Details!"}>
+      <Layout
+        title={"Peanut Game Catalog | Select and Preview your Favourite Game Details!"}
+        description={'Select and Preview the latest upcoming game around the world!'}
+        >
         <GameList filteredGames={games} />
       </Layout>
       <Footer />
