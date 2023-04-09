@@ -23,7 +23,7 @@ const Footer = () => {
         <div className={styles.footerMenu}>
           <ul>
               <li><Link href={'/'}>Home</Link></li>
-              <li><Link href={'/about'}>About</Link></li>
+              <li><Link href={'/'}>About</Link></li>
               <li><Link href={'/login'}>Login / Register</Link></li>
           </ul>
         </div>
