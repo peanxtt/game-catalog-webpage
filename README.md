@@ -25,13 +25,13 @@ This application are design and implement without using any external UI kits or 
 1. Open terminal and check if you are in the same directory with
 package.json & pnpm-lock.yaml file :
 
-1. Run the command below :
+2. Run the command below :
 
 ```bash
 pnpm install
 ```
 
-1. After the package installation complete, run either of the command below to launch the application :
+3. After the package installation complete, run either of the command below to launch the application :
 
 ```bash
 pnpm dev

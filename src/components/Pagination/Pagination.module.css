@@ -22,7 +22,7 @@
   align-items: center;
   font-size: 2rem;
   color: white;
-  transition: all 0.4s linear;
+  transition: all .4s linear;
   background-color: #8D7B68;
   margin: 0 4px;
  }
@@ -37,7 +37,7 @@
   font-size: 2rem;
   color: white;
   text-decoration: none;
-  transition: all 0.4s linear;
+  transition: all .5s linear;
   background-color: #C36A2D;
   border-radius: 50%;
   margin: 0 4px;
@@ -50,7 +50,7 @@
 
  .pageItemActive:hover {
   transform: scale(1.2);
-  background-color: #DE834D;
+  background-color: #C97842;
  }
 
  @media screen and (max-width: 767px) {

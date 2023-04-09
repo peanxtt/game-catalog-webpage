@@ -55,7 +55,7 @@
   margin-top: 8px;
   font-size: 16px;
   border-radius: 10px;
-  transition: all 0.3s linear;
+  transition: all .3s linear;
   text-transform: none;
   text-indent: 10px;
 }
@@ -100,7 +100,7 @@
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  transition: all 0.3s linear;
+  transition: all .3s linear;
   text-transform:uppercase
 }
 

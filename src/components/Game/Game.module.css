@@ -111,8 +111,8 @@
 }
 
 .container .product .detail {
-  transition: all .3s linear;
-  background: #DE834D;
+  transition: all .5s linear;
+  background: #C36A2D;
   color: whitesmoke;
   font-size: 2.25rem;
   min-height: 45px;
@@ -126,7 +126,7 @@
 
 .container .product .detail:hover {
   transform: scale(1.2);
-  background-color: #FF9966;
+  background-color: #C97842;
 }
 
 @media screen and (max-width: 767px) {
@@ -172,7 +172,7 @@
 
   .container .product .detail {
     color: whitesmoke;
-    background: #DE834D;
+    background: #C36A2D;
     font-size: 2.25rem;
     height: 45px;
     width: 45px;
