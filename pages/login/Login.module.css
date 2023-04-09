@@ -3,7 +3,7 @@
   min-width: 0 auto;
   max-width: 100%;
   margin: 0 auto;
-  padding: 3rem 2rem;
+  padding-top: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,14 +11,15 @@
 }
 
 .center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 50%;
+  padding: 0 100px 0;
   background-color: #86745F;
   border-radius: 25px;
-  box-shadow: 0 0 5px 5px #86745F;
+  box-shadow: 0 0 3px 3px #86745F;
 }
 
 .center h1 {
@@ -151,6 +152,7 @@
 
 @media screen and (max-width: 767px) {
   .center {
-    background-color: #393053;
+    background-color: #86745F;
+    box-shadow: 0 0 0 0;
   }
 }
